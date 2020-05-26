@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: 'jdbc:postgresql//localhost:5432/test10'
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: Password@1
+    hikari:
+      maximum-pool-size: 5
+      connection-timeout: 20000
+    initialization-mode: always
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    generate-ddl: true
